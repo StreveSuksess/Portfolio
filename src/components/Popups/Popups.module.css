@@ -1,0 +1,95 @@
+.popupContainer {
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: 0.3s ease startAnim;
+  transition: all 0.3s;
+}
+
+.popup {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(43, 119, 231, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 16px 32px;
+  display: inline-block;
+  position: relative;
+}
+.popup span {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  line-height: 1.375;
+}
+.popup span .bold {
+  display: inline;
+  font-weight: 500;
+}
+.popup span.textWithButton {
+  margin-bottom: 32px;
+}
+.popup .button {
+  border: 1px solid #ffffff;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  width: 50%;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+}
+.popup .button span {
+  color: #2b77e7;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.popup .button svg path {
+  transition: all 0.3s;
+}
+.popup .button:hover {
+  background: transparent;
+}
+.popup .button:hover span {
+  color: #fff;
+}
+.popup .button:hover svg path {
+  stroke: #ffffff;
+}
+
+.dn {
+  display: none;
+}
+
+.closeAnim {
+  opacity: 0;
+}
+
+@keyframes startAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=Popups.module.css.map */

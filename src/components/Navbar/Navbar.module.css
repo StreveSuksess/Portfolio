@@ -1,0 +1,52 @@
+.navbar {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  left: 0;
+  right: 0;
+}
+
+.logo {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradientText {
+  font-size: 16px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.link {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.link:hover {
+  color: #fff;
+}
+.link.active {
+  color: #0072ff;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

@@ -1,0 +1,95 @@
+.about {
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.375;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.title span {
+  background-image: linear-gradient(to right, #00c6ff, #0072ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.text {
+  color: rgb(100, 116, 139);
+}
+
+.skillsTitle {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+
+.cards {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  transition: 0.25s;
+  perspective: 500px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+.card:hover .back {
+  transform: translateZ(20px) rotate(15deg) rotateX(-20deg) rotateY(-20deg);
+}
+.card:hover .front {
+  transform: translateZ(80px) translateY(-5px) rotateX(15deg) rotateY(15deg);
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+  transform-origin: bottom right;
+  transform: rotate(15deg);
+  will-change: transform;
+  box-shadow: 16px 0 40px #e4e4e4;
+  border-radius: 12px;
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  transition: all 0.3s;
+  transform-style: preserve-3d;
+  transform-origin: top left;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.front img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=About.module.css.map */
