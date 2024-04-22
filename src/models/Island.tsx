@@ -14,7 +14,7 @@ type Props = {
 }
 
 export const Island: FC<Props> = (props) => {
-	const { nodes, materials } = useGLTF('../src/assets/3d/island.glb')
+	const { nodes, materials } = useGLTF('/Portfolio/3d/island.glb')
 	const islandRef = useRef()
 	const { gl, viewport } = useThree()
 	const lastX = useRef(0)

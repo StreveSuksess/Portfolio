@@ -13,6 +13,7 @@ import snapgram from '../src/assets/icons/snapgram.svg'
 import summiz from '../src/assets/icons/summiz.svg'
 import threads from '../src/assets/icons/threads.svg'
 import estate from '../src/assets/icons/estate.svg'
+import threejs from '../src/assets/icons/threejs.svg'
 
 
 export const skills: Skill[] = [
@@ -20,7 +21,6 @@ export const skills: Skill[] = [
 		imageUrl: css,
 		name: 'CSS'
 	},
-
 	{
 		imageUrl: git,
 		name: 'Git'
@@ -56,6 +56,10 @@ export const skills: Skill[] = [
 	{
 		imageUrl: typescript,
 		name: 'TypeScript'
+	},
+	{
+		imageUrl: threejs,
+		name: 'Three js'
 	}
 ]
 

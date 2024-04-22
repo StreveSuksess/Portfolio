@@ -43,7 +43,7 @@ export const Popups: FC<Props> = (props) => {
 					localStage == 2 &&
 					<>
 						<span className={s.textWithButton}>Worked with many companies and picked up many skills along the way</span>
-						<Link className={s.button} to={'/about'}>
+						<Link className={s.button} to={'/Portfolio/about'}>
 							<span>Learn more</span>
 							<svg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'>
 								<path d='M1.16602 7.49984H12.8327M12.8327 7.49984L6.99935 1.6665M12.8327 7.49984L6.99935 13.3332'
@@ -56,7 +56,7 @@ export const Popups: FC<Props> = (props) => {
 					localStage == 3 &&
 					<>
 						<span className={s.textWithButton}>Led multiple projects to success over the years. Curious about the impact?</span>
-						<Link className={s.button} to={'/projects'}>
+						<Link className={s.button} to={'/Portfolio/projects'}>
 							<span>Visit my portfolio</span>
 							<svg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0 0 14 15' fill='none'>
 								<path d='M1.16602 7.49984H12.8327M12.8327 7.49984L6.99935 1.6665M12.8327 7.49984L6.99935 13.3332'

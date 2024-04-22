@@ -10,7 +10,7 @@ type Props = {
 
 export const Plane: FC<Props> = (props) => {
 	const planeRef = useRef()
-	const { scene, animations } = useGLTF('../src/assets/3d/plane.glb')
+	const { scene, animations } = useGLTF('/Portfolio/3d/plane.glb')
 	const { actions } = useAnimations(animations, planeRef)
 
 	useEffect(() => {

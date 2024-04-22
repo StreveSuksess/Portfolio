@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const Sky: FC<Props> = (props) => {
-	const sky = useGLTF('../src/assets/3d/sky.glb')
+	const sky = useGLTF('/Portfolio/3d/sky.glb')
 	const skyRef = useRef()
 
 	useFrame((_, delta) => {
