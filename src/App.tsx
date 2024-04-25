@@ -1,10 +1,15 @@
 import { FC } from 'react'
-import { createBrowserRouter, createRoutesFromElements, Outlet, Route, RouterProvider } from 'react-router-dom'
+import {
+	createBrowserRouter,
+	createRoutesFromElements,
+	Outlet,
+	Route,
+	RouterProvider
+} from 'react-router-dom'
 import { Navbar } from './components/Navbar/Navbar.tsx'
 import { About } from './pages/About/About.tsx'
-import { Projects } from './pages/Projects/Projects.tsx'
 import { Home } from './pages/Home/Home.tsx'
-
+import { Projects } from './pages/Projects/Projects.tsx'
 
 const Root = () => {
 	return (
@@ -17,10 +22,10 @@ const Root = () => {
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		<Route path='/Portfolio' element={<Root />}>
+		<Route path="/Portfolio" element={<Root />}>
 			<Route index element={<Home />} />
-			<Route path='/Portfolio/about' element={<About />} />
-			<Route path='/Portfolio/projects' element={<Projects />} />
+			<Route path="/Portfolio/about" element={<About />} />
+			<Route path="/Portfolio/projects" element={<Projects />} />
 		</Route>
 	)
 )

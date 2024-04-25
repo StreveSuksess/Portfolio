@@ -1,106 +1,122 @@
 .popupContainer {
-  position: absolute;
-  z-index: 1;
-  top: 100px;
-  background: transparent;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  animation: 0.3s ease startAnim;
-  transition: all .3s;
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	background: transparent;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	animation: 0.3s ease startAnim;
+	transition: all 0.3s;
 }
 
 .popup {
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(#2b77e7, 0.1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 16px 32px;
-  display: inline-block;
-  position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	background: rgba(#2b77e7, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 16px 32px;
+	display: inline-block;
+	position: relative;
 
-  span {
-    color: #fff;
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    line-height: 1.375;
+	@media (max-width: 768px) {
+		padding: 12px 24px;
+		max-width: calc(100vw - 130px);
+	}
 
-    .bold {
-      display: inline;
-      font-weight: 500;
-    }
+	span {
+		color: #fff;
+		font-size: 20px;
+		display: block;
+		text-align: center;
+		line-height: 1.375;
 
-    &.textWithButton {
-      margin-bottom: 32px;
-    }
-  }
+		@media (max-width: 768px) {
+			font-size: 16px;
+		}
 
-  .button {
-    border: 1px solid #ffffff;
-    background: #fff;
-    border-radius: 10px;
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
-    width: 50%;
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    left: 0;
-    margin-left: auto;
-    margin-right: auto;
-    transition: all .3s;
+		.bold {
+			display: inline;
+			font-weight: 500;
+		}
 
-    span {
-      color: #2b77e7;
-      font-weight: 600;
-      font-size: 16px;
-      transition: all .3s;
-    }
+		&.textWithButton {
+			margin-bottom: 32px;
+			@media (max-width: 768px) {
+				margin-bottom: 24px;
+			}
+		}
+	}
 
-    svg {
-      path {
-        transition: all .3s;
-      }
-    }
+	.button {
+		border: 1px solid #ffffff;
+		background: #fff;
+		border-radius: 10px;
+		display: flex;
+		gap: 12px;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 24px;
+		width: 50%;
+		position: absolute;
+		bottom: -20px;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		transition: all 0.3s;
+		@media (max-width: 768px) {
+			padding: 8px 16px;
+			width: 70%;
+		}
 
-    &:hover {
-      background: transparent;
+		span {
+			color: #2b77e7;
+			font-weight: 600;
+			font-size: 16px;
+			transition: all 0.3s;
+		}
 
-      span {
-        color: #fff;
-      }
+		svg {
+			path {
+				transition: all 0.3s;
+			}
+		}
 
-      svg {
-        path {
-          stroke: #ffffff;
-        }
-      }
-    }
-  }
+		&:hover {
+			background: transparent;
+
+			span {
+				color: #fff;
+			}
+
+			svg {
+				path {
+					stroke: #ffffff;
+				}
+			}
+		}
+	}
 }
 
 .dn {
-  display: none;
+	display: none;
 }
 
 .closeAnim {
-  opacity: 0;
+	opacity: 0;
 }
 
 @keyframes startAnim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

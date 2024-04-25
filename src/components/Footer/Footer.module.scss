@@ -1,32 +1,44 @@
 .footer {
-  margin: 64px 0;
-  border-top: 1px solid rgb(226, 232, 240);
-  padding-top: 64px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+	margin: 64px 0;
+	border-top: 1px solid rgb(226, 232, 240);
+	padding-top: 64px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@media (max-width: 768px) {
+		padding-top: 24px;
+		flex-direction: column;
+	}
 }
 
 .title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 800;
-  color: rgb(29, 34, 53);
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 800;
+	color: rgb(29, 34, 53);
+	@media (max-width: 768px) {
+		font-size: 28px;
+		text-align: center;
+	}
 }
 
 .link {
-  padding: 10px 20px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #fff;
-  border-radius: 8px;
-  background-image: linear-gradient(to right, #00c6ff, #0072ff);
-  transition: all .3s;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #fff;
+	border-radius: 8px;
+	background-image: linear-gradient(to right, #00c6ff, #0072ff);
+	transition: all 0.3s;
 
-  &:hover {
-    background: transparent;
-    color: #00c6ff;
-  }
+	&:hover {
+		background: transparent;
+		color: #00c6ff;
+	}
+
+	@media (max-width: 768px) {
+		width: calc(100vw - 110px);
+	}
 }
