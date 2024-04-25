@@ -64,7 +64,6 @@ export const Home: FC = () => {
 					/>
 					<Sky isRotating={isRotating} />
 					<Plane
-						isRotating={isRotating}
 						position={planePosition}
 						rotation={[0, 20.1, 0]}
 						scale={planeScale}

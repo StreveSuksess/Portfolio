@@ -1,11 +1,11 @@
-import { FC, useEffect, useRef } from 'react'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useAnimations, useGLTF } from '@react-three/drei'
+import { FC, useEffect, useRef } from 'react'
 
 type Props = {
-	position: number[],
-	scale: number[],
-	rotation: number[],
-	isRotating: boolean,
+	position: number[]
+	scale: number[]
+	rotation: number[]
 }
 
 export const Plane: FC<Props> = (props) => {
@@ -14,15 +14,19 @@ export const Plane: FC<Props> = (props) => {
 	const { actions } = useAnimations(animations, planeRef)
 
 	useEffect(() => {
-		if (props.isRotating) {
-			actions['Take 001']?.play()
-		} else {
-			actions['Take 001']?.stop()
-		}
-	}, [actions, props.isRotating])
+		actions['Take 001']?.play()
+	}, [actions])
 	return (
-		// @ts-ignore
-		<mesh scale={props.scale} rotation={props.rotation} position={props.position} ref={planeRef}>
+		<mesh
+			// @ts-ignore
+			scale={props.scale}
+			// @ts-ignore
+			rotation={props.rotation}
+			// @ts-ignore
+			position={props.position}
+			// @ts-ignore
+			ref={planeRef}
+		>
 			<primitive object={scene} />
 		</mesh>
 	)
